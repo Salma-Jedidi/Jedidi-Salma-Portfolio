@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>predection de la maladie chronique</title>
+  <link rel="stylesheet" href="projets.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <script src="/script.js"></script>
+</head>
+<div id="navbar"></div>
+<script>
+  fetch("navbar.html")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("navbar").innerHTML = data;
+    });
+</script>
+
+<body>
+  <header class="header">
+    <h1>Predection de la maladie chronique</h1>
+  </header>
+
+
+  <main class="projects">
+    <div class="card">
+      <div class="card__video">
+        <video width="100%" height="auto" controls>
+          <source src="/assets/maladieprediction.mp4" type="video/mp4">
+
+          Votre navigateur ne prend pas en charge la lecture des vidéos.
+        </video>
+      </div>
+
+      <div class="card__content">
+        <!-- Colonne gauche -->
+        <div class="card__left">
+          <h2 id="frenchTitle" class="card__title">Prediction de la Maladie Chronique</h2>
+          <!-- Titre en anglais -->
+          <h2 id="englishTitle" class="card__title hidden">Chronic Disease Prediction</h2>
+          <a href="https://github.com/Salma-Jedidi/python-projects/tree/predection-de-maladie" target="_blank"
+            class="card__link">Lien GitHub</a>
+        </div>
+        <!-- Colonne droite -->
+        <div class="card__right">
+          <!-- Texte en français -->
+          <div class="card__description" id="frenchText" style="display: block;">
+            <p>
+              Ce projet se concentre sur l'utilisation de techniques avancées de
+              <span style="font-weight: bold; color: #4b0413;">machine learning</span>
+              pour prédire la présence de maladies chroniques. En analysant des
+              <span style="font-weight: bold; color: #4b0413;">ensembles de données cliniques</span>,
+              le système applique des méthodes de <span style="font-weight: bold; color: #4b0413;">prétraitement des
+                données</span>
+              et de <span style="font-weight: bold; color: #4b0413;">sélection des caractéristiques</span> afin
+              d’identifier les
+              <span style="font-weight: bold; color: #4b0413;">facteurs de risque</span> majeurs. Grâce à des
+              algorithmes tels que
+              <span style="font-weight: bold; color: #4b0413;">Random Forest</span> et
+              <span style="font-weight: bold; color: #4b0413;">Support Vector Machines (SVM)</span>, le modèle atteint
+              une
+              <span style="font-weight: bold; color: #4b0413;">précision élevée</span> dans la classification des
+              patients. Les résultats sont validés à l'aide de métriques telles que l'
+              <span style="font-weight: bold; color: #4b0413;">exactitude</span>, le <span
+                style="font-weight: bold; color: #4b0413;">Rappel</span> et la
+              <span style="font-weight: bold; color: #4b0413;">courbe ROC-AUC</span>. Ce projet contribue à
+              l'amélioration de la
+              <span style="font-weight: bold; color: #4b0413;">prévention médicale</span> et à l’optimisation des soins
+              de santé.
+            </p> <br>
+            <div id="technologies-section" style="display: none;">
+              <span style="font-weight: bold; color: #4b0413;">Techniques utilisées:</span>
+              <div style="margin-top: 25px;margin-left: 40px;">
+                <ol>
+                  <li><strong>Prétraitement des données :</strong>
+                    <ul>
+                      <li>Nettoyage des données et traitement des valeurs manquantes.</li>
+                      <li>Réduction de dimension (possiblement mentionnée dans l'exploration de données).</li>
+                    </ul>
+                  </li>
+                  <li><strong>Modélisation :</strong>
+                    <ul>
+                      <li>Modèles de machine learning (par exemple : régression logistique, forêts aléatoires, SVM...).
+                      </li>
+                      <li>Utilisation de réseaux de neurones pour certaines tâches spécifiques.</li>
+                    </ul>
+                  </li>
+                  <li><strong>Évaluation des performances :</strong>
+                    <ul>
+                      <li>Utilisation de métriques comme l'AUC-ROC, la précision, ou le F1-score.</li>
+                    </ul>
+                  </li>
+                  <li><strong>Outils principaux :</strong>
+                    <ul>
+                      <li>Python, bibliothèques comme scikit-learn, TensorFlow ou Keras.</li>
+                      <li>Jupyter Notebooks pour organiser et documenter l'analyse.</li>
+                    </ul>
+                  </li>
+                </ol>
+              </div>
+            </div>
+            <a href="#" id="toggle-technologies" class="toggle-technologies">Voir plus</a>
+
+            <a href="#" id="translateLink">Translate</a>
+          </div>
+
+          <!-- Texte en anglais -->
+          <div class="card__description" id="englishText" style="display: none;">
+            <p>
+              This project focuses on utilizing advanced
+              <span style="font-weight: bold; color: #4b0413;">machine learning</span>
+              techniques to predict the presence of chronic diseases. By analyzing
+              <span style="font-weight: bold; color: #4b0413;">clinical datasets</span>,
+              the system applies <span style="font-weight: bold; color: #4b0413;">data preprocessing</span>
+              and <span style="font-weight: bold; color: #4b0413;">feature selection</span> methods to identify key
+              <span style="font-weight: bold; color: #4b0413;">risk factors</span>. Using algorithms like
+              <span style="font-weight: bold; color: #4b0413;">Random Forest</span> and
+              <span style="font-weight: bold; color: #4b0413;">Support Vector Machines (SVM)</span>, the model achieves
+              <span style="font-weight: bold; color: #4b0413;">high accuracy</span> in patient classification. The
+              results are validated using metrics such as
+              <span style="font-weight: bold; color: #4b0413;">accuracy</span>, <span
+                style="font-weight: bold; color: #4b0413;">recall</span>, and the
+              <span style="font-weight: bold; color: #4b0413;">ROC-AUC curve</span>. This project enhances
+              <span style="font-weight: bold; color: #4b0413;">medical prevention</span> and optimizes healthcare
+              delivery.
+            </p>
+            <br>
+            <div id="technologies-sectionEn" style="display: none;">
+              <span style="font-weight: bold; color: #4b0413;">Techniques :</span>
+              <div style="margin-top: 25px;margin-left: 40px;">
+                <ol>
+                  <li><strong>Data Preprocessing:</strong>
+                    <ul>
+                      <li>Data cleaning and handling missing values.</li>
+                      <li>Dimensionality reduction (possibly mentioned in data exploration).</li>
+                    </ul>
+                  </li>
+                  <li><strong>Modeling:</strong>
+                    <ul>
+                      <li>Machine learning models (e.g., logistic regression, random forests, SVM...).</li>
+                      <li>Use of neural networks for specific tasks.</li>
+                    </ul>
+                  </li>
+                  <li><strong>Performance Evaluation:</strong>
+                    <ul>
+                      <li>Use of metrics such as AUC-ROC, accuracy, or F1-score.</li>
+                    </ul>
+                  </li>
+                  <li><strong>Main Tools:</strong>
+                    <ul>
+                      <li>Python, libraries like scikit-learn, TensorFlow, or Keras.</li>
+                      <li>Jupyter Notebooks for organizing and documenting analysis.</li>
+                    </ul>
+                  </li>
+                </ol>
+
+              </div>
+          </div>
+   
+            <a href="#" id="toggle-technologiesEn" class="toggle-technologies">See More</a><a href="#" id="translateLinkEn">Traduire</a>
+          </div>
+        </div>
+       </div>
+    
+  </main>
+  <div class="arrow-button left" onclick="navigateTo('graphRecommendation.html')">
+    <i class="fa-solid fa-arrow-left"></i>
+  </div>
+  <!-- Bouton droit -->
+  <div class="arrow-button right" onclick="navigateTo('yoga.html')">
+    <i class="fa-solid fa-arrow-right"></i>
+  </div>
+  <script>
+  document.addEventListener('DOMContentLoaded', function () {
+    // Récupérer les éléments de texte en français et en anglais
+    const translateLink = document.getElementById('translateLink');
+    const frenchText = document.getElementById('frenchText');
+    const englishText = document.getElementById('englishText');
+    
+    // Fonction pour basculer l'affichage du texte en français/anglais
+    translateLink.addEventListener('click', function (event) {
+        event.preventDefault(); // Empêche le comportement par défaut du lien
+        frenchText.style.display = (frenchText.style.display === 'none') ? 'block' : 'none';
+        englishText.style.display = (englishText.style.display === 'none') ? 'block' : 'none';
+    });
+
+    // Pour la section "Voir Plus" en français
+    const toggleLinkFr = document.getElementById('toggle-technologies');
+    const technologiesSectionFr = document.getElementById('technologies-section');
+    technologiesSectionFr.style.display = 'none'; // Initialement cachée
+
+    // Pour la section "See More" en anglais
+    const toggleLinkEn = document.getElementById('toggle-technologiesEn');
+    const technologiesSectionEn = document.getElementById('technologies-sectionEn');
+    technologiesSectionEn.style.display = 'none'; // Initialement cachée
+
+    // Fonction pour basculer la section en français
+    toggleLinkFr.addEventListener('click', function (event) {
+        event.preventDefault();
+        if (technologiesSectionFr.style.display === 'none') {
+            technologiesSectionFr.style.display = 'block';
+            toggleLinkFr.textContent = 'Voir Moins';
+        } else {
+            technologiesSectionFr.style.display = 'none';
+            toggleLinkFr.textContent = 'Voir Plus';
+        }
+    });
+
+    // Fonction pour basculer la section en anglais
+    toggleLinkEn.addEventListener('click', function (event) {
+        event.preventDefault();
+        if (technologiesSectionEn.style.display === 'none') {
+            technologiesSectionEn.style.display = 'block';
+            toggleLinkEn.textContent = 'See Less';
+        } else {
+            technologiesSectionEn.style.display = 'none';
+            toggleLinkEn.textContent = 'See More';
+        }
+    });
+});
+</script>
+
+
+</body>
+<footer class="footer">
+  <p>© Copyright 2024 | Jedidi Salma | Tous droits réservés</p>
+</footer>
+
+</html>

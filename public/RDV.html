@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RDV application</title>
+    <link rel="stylesheet" href="projets.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script src="/script.js"></script>
+</head>
+<div id="navbar"></div>
+<script>
+  fetch("navbar.html")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("navbar").innerHTML = data;
+    });
+</script>
+<body>
+    <header class="header">
+        <h1>Gestion de rendez-vous médicaux</h1>
+    </header>
+
+
+    <main class="projects">
+        <div class="card">
+            <div class="card__video">
+                <video width="100%" height="auto" controls>
+                    <source src="/assets/appRDV‐ Réalisée avec Clipchamp (2).mp4" type="video/mp4">
+                    Votre navigateur ne prend pas en charge la lecture des vidéos.
+                </video>
+            </div>
+    
+          
+         <div class="card__content">
+            <!-- Left Column -->
+            <div class="card__left">
+                <h2 id="frenchTitle" class="card__title">Gestion des Rendez-vous Médicaux</h2>
+                <h2 id="englishTitle" class="card__title hidden">Medical Appointment Management</h2>
+                <a href="https://github.com/Salma-Jedidi/rdvProject" target="_blank" class="card__link">Lien GitHub</a>
+            </div>
+        
+            <!-- Right Column -->
+            <div class="card__right">
+                <!-- French Text -->
+                <div class="card__description" id="frenchText">
+                    <p>
+                        Le projet <span style="font-weight: bold; color: #4b0413;">RDVMed</span> est une application web et mobile permettant aux patients de prendre des rendez-vous médicaux facilement et aux professionnels de santé de gérer leurs agendas efficacement.
+                        <br>
+                        Ce projet utilise <span style="font-weight: bold; color: #4b0413;">Spring Boot</span> pour le backend et <span style="font-weight: bold; color: #4b0413;">Angular</span> pour le frontend, avec une architecture basée sur le modèle MVC.
+                    </p><br>
+                    <div id="technologies-section" style="display: none;">
+                    <span style="font-weight: bold; color: #4b0413;">Technologies utilisées :</span>
+                    <div style="margin-top: 25px; margin-left: 40px;" >
+                        <ol >
+                            <li><strong>Frontend :</strong>
+                                <ul>
+                                    <li><strong>Angular :</strong> Développement de l'interface utilisateur dynamique et réactive, gestion des composants et des services pour améliorer l'expérience utilisateur.</li>
+                                    <li><strong>HTML5 / CSS3 / JavaScript :</strong> Conception et mise en page de l'application avec des fonctionnalités front-end personnalisées.</li>
+                                </ul>
+                            </li>
+                            <li><strong>Backend :</strong>
+                                <ul>
+                                    <li><strong>Spring Boot :</strong> Création des services RESTful pour la gestion des données des utilisateurs et des rendez-vous.</li>
+                                    <li><strong>Hibernate :</strong> Gestion de la persistance des données avec une base relationnelle (MySQL).</li>
+                                </ul>
+                            </li>
+                            <li><strong>Architecture :</strong>
+                                <ul>
+                                    <li><strong>MVC :</strong> Mise en œuvre de la séparation des responsabilités pour un développement organisé et évolutif.</li>
+                                </ul>
+                            </li>
+                            <li><strong>Sécurité :</strong>
+                                <ul>
+                                    <li><strong>JWT :</strong> Sécurisation de l'accès aux services via l'authentification par tokens.</li>
+                                </ul>
+                            </li>
+                        </ol>
+                       
+                    </div>
+                    <br>
+                    <span style="font-weight: bold; color: #4b0413;">Conclusion :</span>
+                    <p>
+                        Ce projet m’a permis de développer mes compétences en développement full-stack, en gestion de projet MVC, et en implémentation de sécurité. RDVMed offre une solution complète et évolutive pour la gestion des rendez-vous médicaux.
+                       </p>
+                   </div>  <a href="#" id="toggle-technologies" class="toggle-technologies">Voir plus</a>
+                    <a href="#" id="translateLink">Translate</a>
+                </div>
+        
+                <!-- English Text -->
+                <div class="card__description hidden" id="englishText">
+                    <p>
+                        The <span style="font-weight: bold; color: #4b0413;">RDVMed</span> project is a web and mobile application allowing patients to book medical appointments easily and healthcare professionals to manage their schedules effectively.
+                        <br>
+                        This project uses <span style="font-weight: bold; color: #4b0413;">Spring Boot</span> for the backend and <span style="font-weight: bold; color: #4b0413;">Angular</span> for the frontend, following the MVC model.
+                    </p><br>
+                    <div id="technologies-sectionEn" style="display: none;">
+                    <span style="font-weight: bold; color: #4b0413;">Technologies used:</span>
+                    <div style="margin-top: 25px; margin-left: 40px;">
+                        <ol >
+                            <li><strong>Frontend:</strong>
+                                <ul>
+                                    <li><strong>Angular:</strong> Development of a dynamic and interactive user interface with optimized components and services.</li>
+                                    <li><strong>HTML5 / CSS3 / JavaScript:</strong> Design and layout of the application with custom front-end features.</li>
+                                </ul>
+                            </li>
+                            <li><strong>Backend:</strong>
+                                <ul>
+                                    <li><strong>Spring Boot:</strong> Creation of RESTful services for user and appointment data management.</li>
+                                    <li><strong>Hibernate:</strong> Data persistence management with a relational database (MySQL).</li>
+                                </ul>
+                            </li>
+                            <li><strong>Architecture:</strong>
+                                <ul>
+                                    <li><strong>MVC:</strong> Clear separation of concerns for organized and scalable development.</li>
+                                </ul>
+                            </li>
+                            <li><strong>Security:</strong>
+                                <ul>
+                                    <li><strong>JWT:</strong> Securing access to services through token-based authentication.</li>
+                                </ul>
+                            </li>
+                        </ol>
+                       
+                    </div>
+                    <br>
+                    <span style="font-weight: bold; color: #4b0413;">Conclusion:</span>
+                    <p>
+                        This project enhanced my full-stack development skills, MVC project management, and security implementation. RDVMed provides a complete and scalable solution for managing medical appointments.
+                    </p> 
+                    </div>
+                    <a href="#" id="toggle-technologiesEn" class="toggle-technologies">See More</a>
+                 
+                    <a href="#" id="translateLinkEn">Traduire</a>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+
+    
+      <!-- Bouton droit -->
+      <div class="arrow-button right" onclick="navigateTo('house.html')">
+        <i class="fa-solid fa-arrow-right"></i>
+      </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const translateLink = document.getElementById('translateLink');
+            const frenchText = document.getElementById('frenchText');
+            const englishText = document.getElementById('englishText');
+            const frenchTitle = document.getElementById('frenchTitle');
+            const englishTitle = document.getElementById('englishTitle');
+
+            translateLink.addEventListener('click', function (event) {
+                event.preventDefault(); // Empêche le comportement par défaut du lien
+                frenchTitle.classList.toggle('hidden');
+                englishTitle.classList.toggle('hidden');
+                frenchText.classList.toggle('hidden'); // Affiche ou masque le texte en français
+                englishText.classList.toggle('hidden'); // Affiche ou masque le texte en anglais
+            });
+            translateLinkEn.addEventListener('click', function (event) {
+                event.preventDefault(); // Empêche le comportement par défaut du lien
+
+                englishTitle.classList.toggle('hidden');
+                frenchTitle.classList.toggle('hidden');
+                englishText.classList.toggle('hidden'); // Affiche ou masque le texte en anglais
+                frenchText.classList.toggle('hidden'); // Affiche ou masque le texte en français
+            });
+        });
+       
+        document.addEventListener('DOMContentLoaded', function () {
+  // Pour la section en français
+  const toggleLinkFr = document.getElementById('toggle-technologies');
+  const technologiesSectionFr = document.getElementById('technologies-section');
+  
+  // Pour la section en anglais
+  const toggleLinkEn = document.getElementById('toggle-technologiesEn');
+  const technologiesSectionEn = document.getElementById('technologies-sectionEn');
+  
+  // Fonction pour basculer la section en français
+  toggleLinkFr.addEventListener('click', function (event) {
+      event.preventDefault();
+      
+      // Basculer l'affichage de la section "Technologies utilisées" en français
+      if (technologiesSectionFr.style.display === 'none') {
+          technologiesSectionFr.style.display = 'block';
+          toggleLinkFr.textContent = 'Voir Moins'; // Changer le texte en "Voir moins"
+      } else {
+          technologiesSectionFr.style.display = 'none';
+          toggleLinkFr.textContent = 'Voir Plus'; // Changer le texte en "Voir plus"
+      }
+  });
+  
+  // Fonction pour basculer la section en anglais
+  toggleLinkEn.addEventListener('click', function (event) {
+      event.preventDefault();
+      
+      // Basculer l'affichage de la section "Technologies used" en anglais
+      if (technologiesSectionEn.style.display === 'none') {
+          technologiesSectionEn.style.display = 'block';
+          toggleLinkEn.textContent = 'See Less'; // Changer le texte en "Voir moins"
+      } else {
+          technologiesSectionEn.style.display = 'none';
+          toggleLinkEn.textContent = 'See More'; // Changer le texte en "Voir plus"
+      }
+  });
+});
+
+    </script>
+</body>
+<footer class="footer">
+  <p>© Copyright 2024 | Jedidi Salma | Tous droits réservés</p>
+</footer>
+</html>

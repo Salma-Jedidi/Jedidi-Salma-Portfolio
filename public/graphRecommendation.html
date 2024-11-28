@@ -1,0 +1,95 @@
+
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graph-Based Recommendation System</title>
+    <link rel="stylesheet" href="projets.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+ 
+    <script src="/script.js"></script>
+</head>
+<div id="navbar"></div>
+<script>
+  fetch("navbar.html")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("navbar").innerHTML = data;
+    });
+</script>
+<body>
+    <header class="header">
+        <h1>Système de Recommandation Basé sur les Graphes</h1>
+    </header>
+
+
+    <main class="projects">
+        <div class="card">
+            <div class="card__video">
+                <video width="100%" height="auto" controls>
+                    <source src="/assets/graphV.mp4" type="video/mp4">
+                    Votre navigateur ne prend pas en charge la lecture des vidéos.
+                </video>
+            </div>
+  
+        
+            <div class="card__content">
+              <!-- Colonne gauche -->
+              <div class="card__left">
+                  <h2 class="card__title">Graph-Based Recommendation System</h2>
+                  <a href="https://github.com/Salma-Jedidi/Graph-based-recommendation-system" target="_blank" class="card__link">Lien GitHub</a>
+              </div>
+              <!-- Colonne droite -->
+              <div class="card__right">
+                  <div class="card__description" id="frenchText">
+                      <p>
+                          Ce projet vise à exploiter des techniques avancées d'<span style="font-weight: bold; color: #4b0413;">apprentissage par ontologie</span> et des <span style="font-weight: bold; color: #4b0413;">modèles de graphes</span> pour fournir des <span style="font-weight: bold; color: #4b0413;">recommandations précises et pertinentes</span>. À partir des données extraites d'un <span style="font-weight: bold; color: #4b0413;">corpus PMI</span>, le projet se concentre sur le <span style="font-weight: bold; color: #4b0413;">prétraitement</span>, le <span style="font-weight: bold; color: #4b0413;">nettoyage</span>, et la <span style="font-weight: bold; color: #4b0413;">préparation des données</span> pour créer un <span style="font-weight: bold; color: #4b0413;">graphe des entités et des relations</span>. Grâce à des techniques d'<span style="font-weight: bold; color: #4b0413;">ingénierie des caractéristiques</span> et à l'utilisation de <span style="font-weight: bold; color: #4b0413;">réseaux de neurones graphiques (GNN)</span>, le système prévoit les <span style="font-weight: bold; color: #4b0413;">liens manquants ou futurs</span> et complète le <span style="font-weight: bold; color: #4b0413;">graphe de connaissances</span>. L'évaluation repose sur des métriques telles que l'<span style="font-weight: bold; color: #4b0413;">AUC-PR</span> et l'<span style="font-weight: bold; color: #4b0413;">erreur de reconstruction</span>, tandis que des <span style="font-weight: bold; color: #4b0413;">tests pratiques</span> garantissent la <span style="font-weight: bold; color: #4b0413;">fiabilité</span> en situation réelle. Ce projet contribue au développement de <span style="font-weight: bold; color: #4b0413;">solutions robustes</span> de recommandation dans divers contextes.
+                          <a href="#" id="translateLink">Translate</a>
+                      </p>
+                  </div>
+                  <p class="card__description hidden" id="englishText">
+                      This project leverages advanced <span style="font-weight: bold; color: #4b0413;">ontology learning techniques</span> and <span style="font-weight: bold; color: #4b0413;">graph models</span> to deliver <span style="font-weight: bold; color: #4b0413;">precise and relevant recommendations</span>. Using data extracted from the <span style="font-weight: bold; color: #4b0413;">PMI corpus</span>, the project focuses on <span style="font-weight: bold; color: #4b0413;">preprocessing</span>, <span style="font-weight: bold; color: #4b0413;">cleaning</span>, and <span style="font-weight: bold; color: #4b0413;">preparing data</span> to build a <span style="font-weight: bold; color: #4b0413;">graph of entities and relationships</span>. Through <span style="font-weight: bold; color: #4b0413;">feature engineering</span> and the application of <span style="font-weight: bold; color: #4b0413;">Graph Neural Networks (GNN)</span>, the system predicts <span style="font-weight: bold; color: #4b0413;">missing or future links</span> and completes the <span style="font-weight: bold; color: #4b0413;">knowledge graph</span>. Evaluation relies on metrics like <span style="font-weight: bold; color: #4b0413;">AUC-PR</span> and <span style="font-weight: bold; color: #4b0413;">reconstruction error</span>, while <span style="font-weight: bold; color: #4b0413;">practical use-case testing</span> ensures <span style="font-weight: bold; color: #4b0413;">reliability</span> in real-world scenarios. This project advances the development of <span style="font-weight: bold; color: #4b0413;">robust recommendation solutions</span> across various contexts.
+                      <a href="#" id="translateLinkEn">Traduire</a>
+                    </p>
+              </div>
+          </div>
+    
+    </main>
+    <div class="arrow-button left" onclick="navigateTo('house.html')">
+      <i class="fa-solid fa-arrow-left"></i>
+    </div>
+  
+    <!-- Bouton droit -->
+    <div class="arrow-button right" onclick="navigateTo('maladiePrediction.html')">
+      <i class="fa-solid fa-arrow-right"></i>
+    </div>
+    <div class="skill">
+      <embed src="/pdf/Poster-Projet-IA.pdf" width="1200%" height="100%" type="application/pdf">
+
+    </div>  
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+          const translateLink = document.getElementById('translateLink');
+          const frenchText = document.getElementById('frenchText');
+          const englishText = document.getElementById('englishText');
+
+          translateLink.addEventListener('click', function (event) {
+              event.preventDefault(); // Empêche le comportement par défaut du lien
+              frenchText.classList.toggle('hidden'); // Affiche ou masque le texte en français
+              englishText.classList.toggle('hidden'); // Affiche ou masque le texte en anglais
+          });
+          translateLinkEn.addEventListener('click', function (event) {
+              event.preventDefault(); // Empêche le comportement par défaut du lien
+              
+              englishText.classList.toggle('hidden'); // Affiche ou masque le texte en anglais
+              frenchText.classList.toggle('hidden'); // Affiche ou masque le texte en français
+          });
+      });
+  </script>
+</body>
+<footer class="footer">
+  <p>© Copyright 2024 | Jedidi Salma | Tous droits réservés</p>
+</footer>
+</html>

@@ -1,0 +1,236 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Price predection</title>
+    <link rel="stylesheet" href="projets.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+ 
+    <script src="/script.js"></script>
+</head>
+<div id="navbar"></div>
+<script>
+  fetch("navbar.html")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("navbar").innerHTML = data;
+    });
+</script>
+<body>
+    <header class="header">
+        <h1> Prédiction des prix des maisons</h1>
+    </header>
+
+
+    <main class="projects">
+        <div class="card">
+            <div class="card__video">
+                <video width="100%" height="auto" controls>
+                    <source src="/assets/HousePrediction.mp4" type="video/mp4">
+                    Votre navigateur ne prend pas en charge la lecture des vidéos.
+                </video>
+            </div>
+           
+        <div class="card__content">
+          <!-- Colonne gauche -->
+          <div class="card__left">
+            <h2 id="frenchTitle" class="card__title"> Prédiction des prix des maisons</h2>
+            <!-- Titre en anglais -->
+            <h2 id="englishTitle" class="card__title hidden"> House Price Prediction</h2>
+         
+        <a href="https://github.com/Salma-Jedidi/python-projects/tree/house-prediction-project" target="_blank" class="card__link">Lien GitHub</a>
+        </div>
+          <!-- Colonne droite -->
+          <div class="card__right">
+            <!-- Texte en français -->
+            <div class="card__description" id="frenchText">
+              <p>
+                Le projet <span style="font-weight: bold; color: #4b0413;">House Prediction</span> vise à développer un modèle de machine learning capable de prédire avec précision les prix des maisons en fonction de différentes caractéristiques.<br> À travers ce projet, j'ai appliqué des compétences en <span style="font-weight: bold; color: #4b0413;">analyse exploratoire des données</span>, en <span style="font-weight: bold; color: #4b0413;">nettoyage des données</span> et en <span style="font-weight: bold; color: #4b0413;">construction de modèles prédictifs</span>.<br> En utilisant des algorithmes comme le <span style="font-weight: bold; color: #4b0413;">Random Forest</span> et la <span style="font-weight: bold; color: #4b0413;">régression linéaire</span>, j'ai optimisé les performances du modèle pour obtenir une précision élevée. Ce projet a renforcé mes compétences en <span style="font-weight: bold; color: #4b0413;">data science</span> et en <span style="font-weight: bold; color: #4b0413;">programmation Python</span>.
+              </p>
+              <div id="technologies-section" style="display: none;">
+              <span style="font-weight: bold; color: #4b0413;">Techniques utilisées:</span>
+              <div style="margin-top: 25px;margin-left: 40px;">
+                <ol>
+                    <li><strong>Manipulation et nettoyage des données :</strong>
+                        <ul>
+                            <li><strong>Pandas :</strong> Pour gérer et traiter les données tabulaires, y compris le nettoyage et la transformation.</li>
+                            <li><strong>NumPy :</strong> Pour les calculs numériques et la gestion efficace des tableaux.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Visualisation des données :</strong>
+                        <ul>
+                            <li><strong>Matplotlib :</strong> Pour créer des visualisations statiques afin de comprendre les distributions et tendances des données.</li>
+                            <li><strong>Seaborn :</strong> Pour des visualisations plus avancées et esthétiques, comme les cartes de corrélation et les graphiques catégoriels.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Apprentissage automatique :</strong>
+                        <ul>
+                            <li><strong>Scikit-learn :</strong> Pour implémenter des algorithmes comme Random Forest et Régression Linéaire, ainsi que pour la sélection des variables, l’évaluation des modèles et l’optimisation des hyperparamètres.</li>
+                            <li><strong>XGBoost (optionnel) :</strong> Pour le boosting avancé et l’amélioration de la précision des prédictions.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Environnement de programmation :</strong>
+                        <ul>
+                            <li><strong>Python :</strong> Le langage de programmation principal du projet.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Développement et déploiement :</strong>
+                        <ul>
+                            <li><strong>Jupyter Notebook :</strong> Pour l’analyse exploratoire des données (EDA), le développement des modèles et la visualisation dans un environnement interactif.</li>
+                            <li><strong>VS Code (ou autre IDE) :</strong> Pour écrire et maintenir le code.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Évaluation et optimisation :</strong>
+                        <ul>
+                            <li><strong>Scikit-learn Metrics :</strong> Pour calculer des métriques comme l'erreur quadratique moyenne (MSE), le R-carré ou l'erreur absolue moyenne (MAE).</li>
+                            <li><strong>GridSearchCV ou RandomizedSearchCV :</strong> Pour l’optimisation des hyperparamètres.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Sources de données et stockage :</strong>
+                        <ul>
+                            <li><strong>Fichiers CSV ou Excel :</strong> Format initial des données.</li>
+                            <li><strong>Kaggle Datasets :</strong> Une source commune de jeux de données pour les prédictions de logements.</li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+            <br>
+              <span style="font-weight: bold; color: #4b0413;">Conclusion:</span>
+                 <p>Les caractéristiques les plus influentes sur le prix sont la surface habitable, le grade, et le nombre de salles de bain. Les maisons rénovées ont généralement des prix plus élevés.</p>
+                </div>
+                <a href="#" id="toggle-technologies" class="toggle-technologies">Voir plus</a>
+             
+                <a href="#" id="translateLink">Translate</a>
+            </div>
+            <!-- Texte en anglais -->
+            <div class="card__description hidden" id="englishText">
+              <p>
+                The <span style="font-weight: bold; color: #4b0413;">House Prediction</span> project focuses on developing a machine learning model to accurately predict house prices based on various features.<br> Through this project, I applied skills in <span style="font-weight: bold; color: #4b0413;">exploratory data analysis</span>, <span style="font-weight: bold; color: #4b0413;">data cleaning</span>, and <span style="font-weight: bold; color: #4b0413;">building predictive models</span>.<br> By utilizing algorithms such as <span style="font-weight: bold; color: #4b0413;">Random Forest</span> and <span style="font-weight: bold; color: #4b0413;">linear regression</span>, I optimized the model's performance to achieve high accuracy. This project enhanced my proficiency in <span style="font-weight: bold; color: #4b0413;">data science</span> and <span style="font-weight: bold; color: #4b0413;">Python programming</span>.
+            </p>
+              
+              <div id="technologies-sectionEn" style="display: none;">
+              <span style="font-weight: bold; color: #4b0413;">Techniques :</span>
+              <div style="margin-top: 25px;margin-left: 40px;">
+                <ol>
+                    <li><strong>Data Manipulation and Cleaning:</strong>
+                        <ul>
+                            <li><strong>Pandas:</strong> For handling and processing tabular data, including cleaning and transformation.</li>
+                            <li><strong>NumPy:</strong> For numerical computations and efficient handling of arrays.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Data Visualization:</strong>
+                        <ul>
+                            <li><strong>Matplotlib:</strong> For creating static visualizations to understand data distributions and trends.</li>
+                            <li><strong>Seaborn:</strong> For more advanced and aesthetically pleasing visualizations, such as correlation heatmaps and categorical plots.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Machine Learning:</strong>
+                        <ul>
+                            <li><strong>Scikit-learn:</strong> For implementing algorithms like Random Forest, Linear Regression, and performing tasks such as feature selection, model evaluation, and hyperparameter tuning.</li>
+                            <li><strong>XGBoost (optional):</strong> For advanced gradient boosting and improving prediction accuracy in competitive datasets.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Programming Environment:</strong>
+                        <ul>
+                            <li><strong>Python:</strong> The primary programming language for the project.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Development and Deployment:</strong>
+                        <ul>
+                            <li><strong>Jupyter Notebook:</strong> For exploratory data analysis (EDA), model development, and visualization in an interactive environment.</li>
+                            <li><strong>VS Code (or another IDE):</strong> For writing and maintaining the codebase.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Evaluation and Optimization:</strong>
+                        <ul>
+                            <li><strong>Scikit-learn Metrics:</strong> For calculating performance metrics such as Mean Squared Error (MSE), R-squared, or Mean Absolute Error (MAE).</li>
+                            <li><strong>GridSearchCV or RandomizedSearchCV:</strong> For hyperparameter optimization.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Data Sources and Storage:</strong>
+                        <ul>
+                            <li><strong>CSV :</strong> As the initial format of the dataset.</li>
+                            <li><strong>Kaggle Datasets:</strong> A common source for datasets related to housing predictions.</li>
+                        </ul>
+                    </li>
+                </ol>
+            </div> <br>
+                                <span style="font-weight: bold; color: #4b0413;">Conclusion:</span>
+                 <p>The most influential factors on price are living area size, grade, and the number of bathrooms. Renovated houses generally have higher prices.</p>
+                </div>
+                <a href="#" id="toggle-technologiesEn" class="toggle-technologies">See More</a><a href="#" id="translateLinkEn">Traduire</a>
+            </div>
+        </div>
+    </div>
+    </main>
+    <div class="arrow-button left" onclick="navigateTo('RDV.html')">
+        <i class="fa-solid fa-arrow-left"></i>
+      </div>
+    
+      <!-- Bouton droit -->
+      <div class="arrow-button right" onclick="navigateTo('graphRecommendation.html')">
+        <i class="fa-solid fa-arrow-right"></i>
+      </div>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+          const translateLink = document.getElementById('translateLink');
+          const frenchText = document.getElementById('frenchText');
+          const englishText = document.getElementById('englishText');
+
+          translateLink.addEventListener('click', function (event) {
+              event.preventDefault(); // Empêche le comportement par défaut du lien
+              frenchText.classList.toggle('hidden'); // Affiche ou masque le texte en français
+              englishText.classList.toggle('hidden'); // Affiche ou masque le texte en anglais
+          });
+          translateLinkEn.addEventListener('click', function (event) {
+              event.preventDefault(); // Empêche le comportement par défaut du lien
+              
+              englishText.classList.toggle('hidden'); // Affiche ou masque le texte en anglais
+              frenchText.classList.toggle('hidden'); // Affiche ou masque le texte en français
+          });
+      });
+      document.addEventListener('DOMContentLoaded', function () {
+  // Pour la section en français
+  const toggleLinkFr = document.getElementById('toggle-technologies');
+  const technologiesSectionFr = document.getElementById('technologies-section');
+  
+  // Pour la section en anglais
+  const toggleLinkEn = document.getElementById('toggle-technologiesEn');
+  const technologiesSectionEn = document.getElementById('technologies-sectionEn');
+  
+  // Fonction pour basculer la section en français
+  toggleLinkFr.addEventListener('click', function (event) {
+      event.preventDefault();
+      
+      // Basculer l'affichage de la section "Technologies utilisées" en français
+      if (technologiesSectionFr.style.display === 'none') {
+          technologiesSectionFr.style.display = 'block';
+          toggleLinkFr.textContent = 'Voir Moins'; // Changer le texte en "Voir moins"
+      } else {
+          technologiesSectionFr.style.display = 'none';
+          toggleLinkFr.textContent = 'Voir Plus'; // Changer le texte en "Voir plus"
+      }
+  });
+  
+  // Fonction pour basculer la section en anglais
+  toggleLinkEn.addEventListener('click', function (event) {
+      event.preventDefault();
+      
+      // Basculer l'affichage de la section "Technologies used" en anglais
+      if (technologiesSectionEn.style.display === 'none') {
+          technologiesSectionEn.style.display = 'block';
+          toggleLinkEn.textContent = 'See Less'; // Changer le texte en "Voir moins"
+      } else {
+          technologiesSectionEn.style.display = 'none';
+          toggleLinkEn.textContent = 'See More'; // Changer le texte en "Voir plus"
+      }
+  });
+});
+  </script>
+</body>
+<footer class="footer">
+  <p>© Copyright 2024 | Jedidi Salma | Tous droits réservés</p>
+</footer>
+</html>

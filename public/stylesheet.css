@@ -1,0 +1,33 @@
+/* Style de l'image */
+img.logo {
+    width: 200px;        /* Taille de l'image */
+    height: 200px;       /* Assure que l'image reste carrée */
+    border-radius: 50%;  /* Transformation en cercle */
+    object-fit: cover;   /* Ajuste l'image sans la déformer */
+    display: block;      /* S'assure que l'image soit un élément de bloc */
+    margin: 0 auto;      /* Centrer l'image si nécessaire */
+    margin-top: 20px;    /* Marge en haut pour espacer un peu l'image */
+    background: rgba(0, 0, 0, 0.8); /* Fond semi-transparent, si nécessaire */
+    margin-left: 40px;
+    margin-right: 40px;
+    opacity: 1;
+    box-shadow: 0 0 4px #999;
+    
+    }
+    /* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+l {
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f4f6f8;
+    color: #333;
+}
+

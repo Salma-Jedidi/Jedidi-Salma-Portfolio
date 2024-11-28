@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Molecule Design</title>
+    <link rel="stylesheet" href="projets.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script src="/script.js"></script>
+ 
+</head>
+<div id="navbar"></div>
+<script>
+  fetch("navbar.html")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("navbar").innerHTML = data;
+    });
+</script>
+<body>
+    <header class="header">
+        <h1>Molecule Design</h1>
+    </header>
+
+
+    <main class="projects">
+        <div class="card">
+            <div class="card__video">
+              <video width="100%" height="auto" controls>
+                <source src="/assets/molAiV.mp4" type="video/mp4">
+                Votre navigateur ne prend pas en charge la lecture des vidéos.
+            </video>
+               </div>
+           
+      
+        <div class="card__content">
+          <!-- Colonne gauche -->
+          <div class="card__left">
+          
+              <h2 id="frenchTitle" class="card__title"> Conception des molécules</h2>
+              <!-- Titre en anglais -->
+              <h2 id="englishTitle" class="card__title hidden"> Drug Discovery</h2>
+              
+        <a href="https://github.com/Salma-Jedidi/django-molecule-project" target="_blank" class="card__link">Lien GitHub</a>
+        </div>
+          <!-- Colonne droite -->
+          <div class="card__right">
+            <div class="card__description" id="frenchText">
+            <p >
+              Ce projet combine la <span style="font-weight: bold; color: #4b0413;">science des données</span> et la <span style="font-weight: bold; color: #4b0413;">conception de molécules</span> pour <span style="font-weight: bold; color: #4b0413;">accélérer la découverte de médicaments</span>. Grâce à des modèles comme les <span style="font-weight: bold; color: #4b0413;">LSTM</span>, les <span style="font-weight: bold; color: #4b0413;">GANs</span>, et les <span style="font-weight: bold; color: #4b0413;">VAEs</span>, des molécules représentées en <span style="font-weight: bold; color: #4b0413;">SMILES</span> sont générées pour réduire les coûts et améliorer l'efficacité.
+                  
+             <a href="#" id="translateLink">Translate</a></p> </div> 
+              <p class="card__description hidden" id="englishText">
+                This project merges <span style="font-weight: bold; color: #4b0413;">data science</span> and <span style="font-weight: bold; color: #4b0413;">molecule design</span> to <span style="font-weight: bold; color: #4b0413;">accelerate drug discovery</span>. Using models such as <span style="font-weight: bold; color: #4b0413;">LSTM</span>, <span style="font-weight: bold; color: #4b0413;">GANs</span>, and <span style="font-weight: bold; color: #4b0413;">VAEs</span>, molecules represented as <span style="font-weight: bold; color: #4b0413;">SMILES</span> are generated to lower costs and improve efficiency.
+                <a href="#" id="translateLinkEn">Traduire</a></p>
+              
+          </div>
+      </div>
+    </main>
+    <div class="arrow-button left" onclick="navigateTo('yoga.html')">
+      <i class="fa-solid fa-arrow-left"></i>
+    </div>
+  
+    <!-- Bouton droit -->
+    <div class="arrow-button right" onclick="navigateTo('tm.html')">
+      <i class="fa-solid fa-arrow-right"></i>
+    </div>
+    <div class="skill" style="height: 140vh;">
+      <img src="/assets/MoleculeDesign.png" width="1200%" height="100%" type="application/pdf">
+    </div> 
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+          const translateLink = document.getElementById('translateLink');
+          const frenchText = document.getElementById('frenchText');
+          const englishText = document.getElementById('englishText');
+          const frenchTitle = document.getElementById('frenchTitle');
+          const englishTitle = document.getElementById('englishTitle');
+
+          translateLink.addEventListener('click', function (event) {
+              event.preventDefault(); // Empêche le comportement par défaut du lien
+              frenchTitle.classList.toggle('hidden');
+              englishTitle.classList.toggle('hidden');
+              frenchText.classList.toggle('hidden'); // Affiche ou masque le texte en français
+              englishText.classList.toggle('hidden'); // Affiche ou masque le texte en anglais
+          });
+          translateLinkEn.addEventListener('click', function (event) {
+              event.preventDefault(); // Empêche le comportement par défaut du lien
+             
+              englishTitle.classList.toggle('hidden');
+              frenchTitle.classList.toggle('hidden');
+              englishText.classList.toggle('hidden'); // Affiche ou masque le texte en anglais
+              frenchText.classList.toggle('hidden'); // Affiche ou masque le texte en français
+          });
+      });
+  </script>
+  </body>
+<footer class="footer">
+  <p>© Copyright 2024 | Jedidi Salma | Tous droits réservés</p>
+</footer>
+</html>

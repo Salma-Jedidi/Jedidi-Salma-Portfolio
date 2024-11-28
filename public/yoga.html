@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yoga Prediction</title>
+    <link rel="stylesheet" href="projets.css">
+    <script src="/script.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+ 
+
+</head>
+<div id="navbar"></div>
+<script>
+    fetch("navbar.html")
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById("navbar").innerHTML = data;
+        });
+</script>
+
+<body>
+
+    <header class="header">
+        <h1>Prédiction des mouvements de yoga</h1>
+    </header>
+
+    <main class="projects">
+        <div class="card">
+            <div class="card__video">
+                <div
+                    style="position: relative; width: 100%; height: 0; padding-top: 56.25%; overflow: hidden; border-radius: 8px;">
+                    <iframe loading="lazy"
+                        style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none;"
+                        src="https://www.canva.com/design/DAFefS8uI5U/JA3Y06XEKYzLnBWj_NoRcg/view?embed"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+            <div class="card__content">
+                <!-- Colonne gauche -->
+                <div class="card__left">
+                    <h2 id="frenchTitle" class="card__title">Prédiction des mouvements de yoga</h2>
+                    <!-- Titre en anglais -->
+                    <h2 id="englishTitle" class="card__title hidden">Yoga Movement Prediction</h2>
+
+                    <a href="https://github.com/Salma-Jedidi/python-projects/tree/yoga-project" target="_blank"
+                        class="card__link">Lien GitHub</a>
+                </div>
+
+                <!-- Colonne droite -->
+                <div class="card__right">
+                    <!-- Texte en français -->
+                    <div class="card__description" id="frenchText">
+                        <p>
+                            Le projet <span style="font-weight: bold; color: #4b0413;">Prédiction des mouvements de
+                                yoga</span> vise à développer un modèle de machine learning capable de prédire les
+                            positions et mouvements effectués pendant une séance de yoga. À travers ce projet, j'ai
+                            appliqué des compétences en <span style="font-weight: bold; color: #4b0413;">traitement des
+                                données de capteurs</span>, en <span style="font-weight: bold; color: #4b0413;">analyse
+                                des mouvements humains</span> et en <span
+                                style="font-weight: bold; color: #4b0413;">construction de modèles prédictifs</span>.<br> En
+                            utilisant des algorithmes comme le <span style="font-weight: bold; color: #4b0413;">Random
+                                Forest</span> et la <span style="font-weight: bold; color: #4b0413;">régression
+                                logistique</span>, j'ai optimisé les performances du modèle pour prédire avec précision
+                            les mouvements. Ce projet a renforcé mes compétences en <span
+                                style="font-weight: bold; color: #4b0413;">data science</span> et en <span
+                                style="font-weight: bold; color: #4b0413;">programmation Python</span>.
+                        </p><br>
+                        <div id="technologies-section" style="display: none;">
+                        <span style="font-weight: bold; color: #4b0413;">Techniques utilisées:</span>
+                        <div style="margin-top: 25px;margin-left: 40px;">
+                            <ol>
+                                <li><strong>Manipulation et nettoyage des données :</strong>
+                                    <ul>
+                                        <li><strong>Pandas :</strong> Pour gérer et traiter les données collectées par
+                                            des capteurs de mouvement et des caméras.</li>
+                                        <li><strong>NumPy :</strong> Pour les calculs numériques et la gestion des
+                                            données multidimensionnelles.</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Analyse des mouvements humains :</strong>
+                                    <ul>
+                                        <li><strong>OpenPose / MediaPipe :</strong> Pour l'extraction des points de
+                                            repère du corps humain à partir de vidéos ou de flux de capteurs.</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Apprentissage automatique :</strong>
+                                    <ul>
+                                        <li><strong>Scikit-learn :</strong> Pour implémenter des algorithmes comme
+                                            Random Forest et Régression Logistique, et pour évaluer les modèles de
+                                            prédiction.</li>
+                                        <li><strong>TensorFlow / Keras :</strong> Pour développer des réseaux de
+                                            neurones profonds, si nécessaire pour des prédictions plus complexes.</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Environnement de programmation :</strong>
+                                    <ul>
+                                        <li><strong>Python :</strong> Le langage de programmation principal pour le
+                                            traitement des données et l'implémentation des modèles.</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Développement et déploiement :</strong>
+                                    <ul>
+                                        <li><strong>Jupyter Notebook :</strong> Pour l'analyse exploratoire des données
+                                            et le développement des modèles dans un environnement interactif.</li>
+                                        <li><strong>VS Code :</strong> Pour écrire et maintenir le code.</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Évaluation et optimisation :</strong>
+                                    <ul>
+                                        <li><strong>Scikit-learn Metrics :</strong> Pour évaluer la performance des
+                                            modèles avec des métriques comme la précision, le rappel et le F1-score.
+                                        </li>
+                                        <li><strong>GridSearchCV :</strong> Pour optimiser les hyperparamètres des
+                                            modèles.</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Sources de données et stockage :</strong>
+                                    <ul>
+                                        <li><strong>Capteurs de mouvement :</strong> Données collectées via des capteurs
+                                            ou des vidéos enregistrées de séances de yoga.</li>
+                                        <li><strong>Sources internes :</strong> Données collectées manuellement ou
+                                            générées pour entraîner le modèle.</li>
+                                        </ul>
+                                    </li>
+                                   
+                                </ol>
+                            </div>
+                            <br>
+                        <span style="font-weight: bold; color: #4b0413;">Conclusion:</span>
+                        <p>Le projet a permis de prédire avec précision les mouvements de yoga en utilisant des données
+                            de capteurs. Les facteurs influents incluent l'alignement corporel et la fluidité des
+                            mouvements.</p>
+                        </div>
+                        <a href="#" id="toggle-technologies" class="toggle-technologies">Voir plus</a>
+                     
+                        <a href="#" id="translateLink">Translate</a>
+                    </div>
+            
+
+                    <!-- Texte en anglais -->
+                    <div class="card__description hidden" id="englishText">
+                        <p>
+                            The <span style="font-weight: bold; color: #4b0413;">Yoga Movement Prediction</span> project
+                            focuses on developing a machine learning model to predict yoga poses and movements performed
+                            during a session. Through this project, I applied skills in <span
+                                style="font-weight: bold; color: #4b0413;">sensor data processing</span>, <span
+                                style="font-weight: bold; color: #4b0413;">human motion analysis</span>, and <span
+                                style="font-weight: bold; color: #4b0413;">building predictive models</span>.<br> By using
+                            algorithms like <span style="font-weight: bold; color: #4b0413;">Random Forest</span> and
+                            <span style="font-weight: bold; color: #4b0413;">logistic regression</span>, I optimized the
+                            model's performance to accurately predict movements. This project enhanced my skills in
+                            <span style="font-weight: bold; color: #4b0413;">data science</span> and <span
+                                style="font-weight: bold; color: #4b0413;">Python programming</span>.
+                        </p><br>
+                        <div id="technologies-sectionEn" style="display: none;">
+                        <span style="font-weight: bold; color: #4b0413;">Techniques used:</span>
+                        <div style="margin-top: 25px;margin-left: 40px;">
+                            <ol>
+                                <li><strong>Data Manipulation and Cleaning:</strong>
+                                    <ul>
+                                        <li><strong>Pandas:</strong> For handling and processing sensor data or video
+                                            data from motion capture systems.</li>
+                                        <li><strong>NumPy:</strong> For numerical calculations and managing
+                                            multidimensional data.</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Human Motion Analysis:</strong>
+                                    <ul>
+                                        <li><strong>OpenPose / MediaPipe:</strong> For extracting key points from human
+                                            body movements via video or sensor feeds.</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Machine Learning:</strong>
+                                    <ul>
+                                        <li><strong>Scikit-learn:</strong> For implementing Random Forest and Logistic
+                                            Regression, and evaluating prediction models.</li>
+                                        <li><strong>TensorFlow / Keras:</strong> For building deep learning models, if
+                                            necessary for complex predictions.</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Programming Environment:</strong>
+                                    <ul>
+                                        <li><strong>Python:</strong> The main programming language used for data
+                                            processing and model implementation.</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Development and Deployment:</strong>
+                                    <ul>
+                                        <li><strong>Jupyter Notebook:</strong> For exploratory data analysis and model
+                                            development in an interactive environment.</li>
+                                        <li><strong>VS Code:</strong> For writing and maintaining the code.</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Evaluation and Optimization:</strong>
+                                    <ul>
+                                        <li><strong>Scikit-learn Metrics:</strong> For evaluating model performance with
+                                            metrics like accuracy, recall, and F1-score.</li>
+                                        <li><strong>GridSearchCV:</strong> For hyperparameter optimization.</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Data Sources and Storage:</strong>
+                                    <ul>
+                                        <li><strong>Motion sensors:</strong> Data collected via motion sensors or
+                                            recorded video from yoga sessions.</li>
+                                        <li><strong>Internal sources:</strong> Manually collected or generated data to
+                                            train the model.</li>
+                                    </ul>
+                                </li>
+                            </ol>
+                        </div>
+                        <br>
+                        <span style="font-weight: bold; color: #4b0413;">Conclusion:</span>
+                        <p>The project successfully predicted yoga movements with high accuracy using sensor data.
+                            Influential factors included body alignment and movement</p>
+                        </div>
+                        <a href="#" id="toggle-technologiesEn" class="toggle-technologies">See More</a><a href="#" id="translateLinkEn">Traduire</a>
+                    </div>
+                </div>
+            </div>
+
+    </main>
+    <div class="arrow-button left" onclick="navigateTo('maladiePrediction.html')">
+        <i class="fa-solid fa-arrow-left"></i>
+      </div>
+    
+      <!-- Bouton droit -->
+      <div class="arrow-button right" onclick="navigateTo('MoleculeDesign.html')">
+        <i class="fa-solid fa-arrow-right"></i>
+      </div>
+    <footer class="footer">
+        <p>© Copyright 2024 | Jedidi Salma | Tous droits réservés</p>
+    </footer>
+
+    <!-- JavaScript placé à la fin -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const translateLink = document.getElementById('translateLink');
+            const frenchText = document.getElementById('frenchText');
+            const englishText = document.getElementById('englishText');
+            const frenchTitle = document.getElementById('frenchTitle');
+            const englishTitle = document.getElementById('englishTitle');
+
+            translateLink.addEventListener('click', function (event) {
+                event.preventDefault(); // Empêche le comportement par défaut du lien
+                frenchTitle.classList.toggle('hidden');
+                englishTitle.classList.toggle('hidden');
+                frenchText.classList.toggle('hidden'); // Affiche ou masque le texte en français
+                englishText.classList.toggle('hidden'); // Affiche ou masque le texte en anglais
+            });
+            translateLinkEn.addEventListener('click', function (event) {
+                event.preventDefault(); // Empêche le comportement par défaut du lien
+
+                englishTitle.classList.toggle('hidden');
+                frenchTitle.classList.toggle('hidden');
+                englishText.classList.toggle('hidden'); // Affiche ou masque le texte en anglais
+                frenchText.classList.toggle('hidden'); // Affiche ou masque le texte en français
+            });
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+  // Pour la section en français
+  const toggleLinkFr = document.getElementById('toggle-technologies');
+  const technologiesSectionFr = document.getElementById('technologies-section');
+  
+  // Pour la section en anglais
+  const toggleLinkEn = document.getElementById('toggle-technologiesEn');
+  const technologiesSectionEn = document.getElementById('technologies-sectionEn');
+  
+  // Fonction pour basculer la section en français
+  toggleLinkFr.addEventListener('click', function (event) {
+      event.preventDefault();
+      
+      // Basculer l'affichage de la section "Technologies utilisées" en français
+      if (technologiesSectionFr.style.display === 'none') {
+          technologiesSectionFr.style.display = 'block';
+          toggleLinkFr.textContent = 'Voir Moins'; // Changer le texte en "Voir moins"
+      } else {
+          technologiesSectionFr.style.display = 'none';
+          toggleLinkFr.textContent = 'Voir Plus'; // Changer le texte en "Voir plus"
+      }
+  });
+  
+  // Fonction pour basculer la section en anglais
+  toggleLinkEn.addEventListener('click', function (event) {
+      event.preventDefault();
+      
+      // Basculer l'affichage de la section "Technologies used" en anglais
+      if (technologiesSectionEn.style.display === 'none') {
+          technologiesSectionEn.style.display = 'block';
+          toggleLinkEn.textContent = 'See Less'; // Changer le texte en "Voir moins"
+      } else {
+          technologiesSectionEn.style.display = 'none';
+          toggleLinkEn.textContent = 'See More'; // Changer le texte en "Voir plus"
+      }
+  });
+});
+    </script>
+</body>
+
+</html>
