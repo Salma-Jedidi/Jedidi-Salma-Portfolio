@@ -1,5 +1,5 @@
 // Function to handle the submission of the contact form
-function addContact() {
+/* function addContact() {
   const companyName = document.querySelector('#company_name').value;
   const subject = document.querySelector('#contact_subject').value;
   const message = document.querySelector('#new_contact').value;
@@ -24,14 +24,7 @@ function addContact() {
   } else {
     alert('Please fill in all fields.');
   }
-}
-
-// Optionally, you can also reset the form directly if you use a form element, like so:
-// document.querySelector('#contact-form').addEventListener('submit', (e) => {
-//   e.preventDefault();
-//   e.target.reset(); // Clear all input fields
-// });
-
+} */
 
 function showPopup(bool) {
   if (bool) {
